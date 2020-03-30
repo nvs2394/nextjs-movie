@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = process.env.API_ENDPOINT === 'prod' ? 'https://shielded-journey-67025.herokuapp.com/' : 'http://localhost:3000'
+const BASE_URL = process.env.API_ENDPOINT || 'http://localhost:3000'
 
 import { CATEGORY_DATA } from "../resources/1_data";
 
