@@ -84,7 +84,9 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
-  server.listen(process.env.PORT || 3000, '0.0.0.0', err => {
+  const PORT = process.env.PORT || 3000;
+
+  server.listen(PORT, '0.0.0.0', err => {
     if (err) throw err;
     console.log("> Ready on port " + PORT);
   });
